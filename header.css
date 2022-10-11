@@ -1,0 +1,196 @@
+.header-container {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    align-items: flex-start;
+    padding: 2% 0;
+}
+
+.logo {
+    margin-right: 50px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav-list {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.nav-link:hover {
+    color: hsl(0, 0%, 8%);
+}
+
+.nav-link {
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+    color: hsl(0, 0%, 41%);
+    font-weight: 500;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.feature-dropdown {
+    position: relative;
+}
+.company-dropdown {
+    position: relative;
+}
+
+.translate {
+    transform: rotate(180deg);
+}
+
+.dropdown {
+    display: none;
+}
+
+.feature-dropdown-list {
+    list-style-type: none;
+    right: 0;
+    position: absolute;
+    width: 150px;
+    padding: 20px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px hsl(0, 0%, 80%);
+}
+
+.company-dropdown-list {
+    position: absolute;
+    list-style-type: none;
+    background-color: #ffffff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px hsl(0, 0%, 80%);
+    transition: 0.03s;
+}
+
+.dropdown-item {
+    padding: 10px 0;
+    font-weight: 500;
+    color: hsl(0, 0%, 41%);
+}
+
+.dropdown-item img {
+    margin-right: 10px;
+}
+
+.join {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.login {
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    font-weight: 500;
+}
+
+.login:hover{
+  color: hsl(0, 0%, 8%);
+}
+
+.register {
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 7px 15px;
+    color: hsl(0, 0%, 41%);
+    font-weight: 500;
+    border: 2px solid hsl(0, 0%, 41%);
+}
+
+.register:hover{
+  color: hsl(0, 0%, 8%);
+  border-color: hsl(0, 0%, 8%);
+}
+
+.open-hamburger,
+.close-hamburger {
+    display: none;
+}
+
+@media (max-width: 426px) {
+    .header-container {
+        width: 100%;
+        padding: 20px;
+        position: relative;
+        justify-content: space-between;
+    }
+    .open-hamburger {
+        display: block;
+    }
+
+    .close-hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    .navbar {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -65%;
+        width: 65%;
+        height: 100vh;
+        justify-content: flex-start;
+        padding: 70px 20px 0 20px;
+        align-items: flex-start;
+        background-color: hsl(0, 0%, 98%);
+        transition: 0.3s;
+        font-size: 14px;
+    }
+
+    .open {
+        right: 0;
+    }
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-item {
+        align-self: flex-start;
+    }
+    .join {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    .login-list {
+        text-align: center;
+    }
+
+    .register {
+        border: 2px solid hsl(0, 0%, 41%);
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 7px 0;
+    }
+
+    .feature-dropdown-list, .company-dropdown-list {
+        list-style-type: none;
+        right: 0;
+        position: static;
+        width: 150px;
+        padding: 20px;
+        background-color: inherit;
+        margin-top: 0px;
+        border-radius: 10px;
+        box-shadow: none;
+    }
+}

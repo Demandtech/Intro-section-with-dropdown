@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <!-- Font family cdns -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <!-- Favicon -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./header.css">
+    <!-- Style sheet -->
+    <title> Frontend Mentor | Intro section with dropdown navigation</title>
+    <script src="https://kit.fontawesome.com/424ae04335.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome icons -->
+</head>
+<body>
+  
+   <header>
+           <div class="header-container">
+                <div class="logo">
+                    <img src="./images/logo.svg" alt="site-logo">
+                </div>
+                <nav class="navbar">
+                    <ul class="nav-list">
+                        <li class="nav-item feature-dropdown">
+                          <a class="nav-link feature-link-dropdown" href="#">Features <i class="fa-sharp fa-solid fa-chevron-down feature-dropdown-icon"></i></a>
+                          <ul class="feature-dropdown-list dropdown">
+                              <li class="dropdown-item"><img src="./images/icon-todo.svg" alt="todo">Todo List</li>
+                              <li class="dropdown-item"><img src="./images/icon-calendar.svg" alt="Calender">Calender</li>
+                              <li class="dropdown-item"><img src="./images/icon-reminders.svg" alt="reminder">Reminder</li>
+                              <li class="dropdown-item"><img src="./images/icon-planning.svg" alt="planning">planning</li>
+                          </ul>
+                        </li>
+
+                        <li class="nav-item company-dropdown">
+                          <a class="nav-link company-link-dropdown" href="">Company <i class="fa-sharp fa-solid fa-chevron-down company-dropdown-icon"></i></a>
+                          <ul class="company-dropdown-list dropdown">
+                              <li class="dropdown-item">Calender</li>
+                              <li class="dropdown-item">Reminder</li>
+                              <li class="dropdown-item">planning</li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="">About</a>
+                        </li>
+                    </ul>
+                    <ul class="join">
+                        <li class="login-list">
+                             <a  class="login" href="">Login</a>
+                        </li>
+                        <li  class="register-list">
+                              <a class="register" href="">Register</a>
+                        </li>
+                    </ul>
+                    <div class="close-hamburger">
+                         <img src="./images/icon-close-menu.svg" alt="icon-close-menu">
+                     </div>
+                </nav>
+                
+                 <div class="open-hamburger">
+                     <img data-src ="images/icon-close-menu.svg" src="./images/icon-menu.svg" alt="hamburger">
+                 </div>
+           </div>
+          
+   </header>
+   <div class="hero">
+       <div class="hero-container">
+          <div class="left-wrapper">
+               <div class="left-content">
+                     <h1>Make<br> remote work</h1>
+                   <p>Get your team in sync, no matter your location. Streamline processes, 
+                    create team rituals, and watch productivity soar.</p>
+                   <a class="btn" href="#">Learn more</a>
+               </div>
+               
+               <div class="brand">
+                  <img src="./images/client-databiz.svg" alt="databiz">
+                  <img src="./images/client-audiophile.svg" alt="audiophile">
+                  <img src="./images/client-meet.svg" alt="meet">
+                  <img src="./images/client-maker.svg" alt="maker">
+               </div>
+          </div>
+          <div class="right-wrapper">
+               <img class="desktop" src="./images/image-hero-desktop.png" alt="image-hero" height="100%" width="90%">
+               <img class="mobile" src="./images/image-hero-mobile.png" alt="image-hero" height="100%" width="90%">
+          </div>
+     </div>
+   </div>
+   
+ 
+   <footer class="attribution">
+            Challenge by
+            <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+            <a href="#">Demand</a>.
+   </footer>
+   <script src="app.js"></script>
+</body>
+</html>
